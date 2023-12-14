@@ -1,0 +1,1942 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+  
+  .navbar {
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  #navbar__logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .fa-solid fa-video {
+    margin-right: 0.5rem;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar__item {
+    height: 80px;
+    
+
+  }
+  
+  .navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    width: 100px;
+  }
+  
+  .navbar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .categories__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    width: 60%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  .categories__btn:hover {
+    color: #4837ff;
+    transition: all 0.3s ease;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    color: #fff;
+  }
+  
+  .button:hover {
+    background: #4837ff;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar__links:hover {
+    color: #f77062;
+    transition: all 0.3s ease;
+  }
+  
+  
+  
+  /* Main Content CSS */
+  .main {
+    background-color: #141414;
+  }
+  
+  .main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  .main__content {
+    color: #fff;
+    width: 100%;
+  }
+  
+  .main__content h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+  .main__content h4 {
+    font-size: 2rem;
+    margin-top: 10px;
+    background-color: #ff8177;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+  
+  
+  
+  .main__btn {
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+  }
+  
+  .main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4837ff;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+  
+  .main__btn:hover {
+    color: #fff;
+  }
+  
+  .main__btn:hover:after {
+    width: 100%;
+  }
+  
+  .main__img--container {
+    text-align: center;
+  }
+  .main__categories {
+    text-align: center;
+  }
+  
+  #main__img {
+    height: 80%;
+    width: 80%;
+  }
+  
+  
+  
+  /* Home Posters Section */
+  .posters {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  .posters h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(
+      to right,
+      #ff8177 0%,
+      #ff867a 0%,
+      #ff8c7f 21%,
+      #f99185 52%,
+      #cf556c 78%,
+      #b12a5b 100%
+    );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+  }
+  
+  .posters__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .poster__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/SpiderMan.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__card:before {
+    opacity: 0.2;
+  }
+  
+  .poster__card:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/pic4.jpeg');
+  }
+  .poster__card:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/IronMan.jpg');
+  }
+  
+  
+  .poster__card h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__card button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+  /* New container */
+  .posters__container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .poster__card2 {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/pic11.png');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__card2:before {
+    opacity: 0.2;
+  }
+  
+  .poster__card2:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/pic12.jpeg');
+  }
+  .poster__card2:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/pic13.jpeg');
+  }
+  
+  
+  .poster__card2 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__card2 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__card2 button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__card2 button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__card2:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+
+  /*till here*/
+  
+  
+  
+  /* Footer CSS */
+  .footer__container {
+    background-color: #141414;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #footer__logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  }
+  
+  .footer__links {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__link--wrapper {
+    display: flex;
+  }
+  
+  .footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+  }
+  
+  .footer__link--items h2 {
+    margin-bottom: 16px;
+  }
+  
+  .footer__link--items > h2 {
+    color: #fff;
+  }
+  
+  .footer__link--items a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer__link--items a:hover {
+    color: #e9e9e9;
+    transition: 0.3s ease-out;
+  }
+  
+  /* Social Icons */
+  .social__icon--link {
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .social__media {
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+  }
+  
+  .social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+  }
+  
+  .social__logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+  .website__rights {
+    color: #fff;
+  }
+  
+  
+
+  .filler {
+    display: grid;
+    
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+  } 
+
+  .filler h1 {
+    font-size: 3rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+  }
+
+  #science_fiction_id {
+    font-size: 3rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+
+  }
+
+  /* Action posters */
+
+  .poster__action {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/action/Black_Adam.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__action:before {
+    opacity: 0.2;
+  }
+  
+  .poster__action:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/action/CasinoRoyale.jpeg');
+  }
+  .poster__action:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/action/Gladiator.jpeg');
+  }
+  
+  .poster__action h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__action p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__action button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__action button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__action:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+  .poster__action2 {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/action/Logan.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__action2:before {
+    opacity: 0.2;
+  }
+  
+  .poster__action2:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/action/No_Time_To_Die.jpeg');
+  }
+  .poster__action2:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/action/Poker_Face.jpeg');
+  }
+  
+  .poster__action2 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__action2 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__action2 button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__action2 button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__action2:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+
+  .poster__action3 {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/action/TERMINATOR.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__action3:before {
+    opacity: 0.2;
+  }
+  
+  .poster__action3:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/action/The_Northman.jpeg');
+  }
+  .poster__action3:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/action/Top_Gun.jpeg');
+  }
+  
+  .poster__action3 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__action3 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__action3 button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__action3 button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__action3:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+
+  /* Science Fiction */
+
+  .poster__science {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/science_fiction/Life.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__science:before {
+    opacity: 0.2;
+  }
+  
+  .poster__science:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/science_fiction/Harry_Poter.jpeg');
+  }
+  .poster__science:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/science_fiction/Lord_Rings.jpeg');
+  }
+  
+  .poster__science h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__science p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__science button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__science button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__science:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+  .poster__science2 {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/science_fiction/Willow.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__science2:before {
+    opacity: 0.2;
+  }
+  
+  .poster__science2:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/science_fiction/Passengers.jpeg');
+  }
+  .poster__science2:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/science_fiction/Alice_in_Wonderland.jpeg');
+  }
+  
+  .poster__science2 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__science2 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__science2 button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__science2 button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__science2:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+
+  .poster__science3 {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/science_fiction/I_Robot.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__science3:before {
+    opacity: 0.2;
+  }
+  
+  .poster__science3:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/science_fiction/The_Hobbit.jpeg');
+  }
+  .poster__science3:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/IronMan.jpg');
+  }
+  
+  .poster__science3 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__science3 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__science3 button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__science3 button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__science3:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+    /* Animation */
+
+    .poster__animation {
+      margin: 1rem;
+      height: 525px;
+      width: 400px;
+      border-radius: 4px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.6) 100%
+        ),
+        url('../MovieUP/images/animation/beauty_beast.jpeg');
+      background-size: cover;
+      position: relative;
+      color: #fff;
+    }
+    
+    .poster__animation:before {
+      opacity: 0.2;
+    }
+    
+    .poster__animation:nth-child(2) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/animation/Finding_Nemo.jpeg');
+    }
+    .poster__animation:nth-child(3) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/animation/inside_out.jpeg');
+    }
+    
+    .poster__animation h2 {
+      position: absolute;
+      top: 350px;
+      left: 30px;
+    }
+    
+    .poster__animation p {
+      position: absolute;
+      top: 400px;
+      left: 30px;
+    }
+    
+    .poster__animation button {
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: #f77062;
+      position: absolute;
+      top: 440px;
+      left: 30px;
+      font-size: 1rem;
+    }
+    
+    .poster__animation button:hover {
+      cursor: pointer;
+    }
+    
+    .poster__animation:hover {
+      transform: scale(1.075);
+      transition: 0.2s ease-in;
+      cursor: pointer;
+    }
+  
+    .poster__animation2 {
+      margin: 1rem;
+      height: 525px;
+      width: 400px;
+      border-radius: 4px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.6) 100%
+        ),
+        url('../MovieUP/images/animation/Lion_king.jpeg');
+      background-size: cover;
+      position: relative;
+      color: #fff;
+    }
+    
+    .poster__animation2:before {
+      opacity: 0.2;
+    }
+    
+    .poster__animation2:nth-child(2) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/animation/Luca.jpeg');
+    }
+    .poster__animation2:nth-child(3) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/animation/Luck.png');
+    }
+    
+    .poster__animation2 h2 {
+      position: absolute;
+      top: 350px;
+      left: 30px;
+    }
+    
+    .poster__animation2 p {
+      position: absolute;
+      top: 400px;
+      left: 30px;
+    }
+    
+    .poster__animation2 button {
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: #f77062;
+      position: absolute;
+      top: 440px;
+      left: 30px;
+      font-size: 1rem;
+    }
+    
+    .poster__animation2 button:hover {
+      cursor: pointer;
+    }
+    
+    .poster__animation2:hover {
+      transform: scale(1.075);
+      transition: 0.2s ease-in;
+      cursor: pointer;
+    }
+  
+  
+    .poster__animation3 {
+      margin: 1rem;
+      height: 525px;
+      width: 400px;
+      border-radius: 4px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.6) 100%
+        ),
+        url('../MovieUP/images/animation/Minions.jpeg');
+      background-size: cover;
+      position: relative;
+      color: #fff;
+    }
+    
+    .poster__animation3:before {
+      opacity: 0.2;
+    }
+    
+    .poster__animation3:nth-child(2) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/animation/Monsters_Inc.jpeg');
+    }
+    .poster__animation3:nth-child(3) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/animation/Ratatouille.jpeg');
+    }
+    
+    .poster__animation3 h2 {
+      position: absolute;
+      top: 350px;
+      left: 30px;
+    }
+    
+    .poster__animation3 p {
+      position: absolute;
+      top: 400px;
+      left: 30px;
+    }
+    
+    .poster__animation3 button {
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: #f77062;
+      position: absolute;
+      top: 440px;
+      left: 30px;
+      font-size: 1rem;
+    }
+    
+    .poster__animation3 button:hover {
+      cursor: pointer;
+    }
+    
+    .poster__animation3:hover {
+      transform: scale(1.075);
+      transition: 0.2s ease-in;
+      cursor: pointer;
+    }
+
+
+     /* Drama */
+
+     .poster__Drama {
+      margin: 1rem;
+      height: 525px;
+      width: 400px;
+      border-radius: 4px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.6) 100%
+        ),
+        url('../MovieUP/images/Drama/Empire_Light.jpeg');
+      background-size: cover;
+      position: relative;
+      color: #fff;
+    }
+    
+    .poster__Drama:before {
+      opacity: 0.2;
+    }
+    
+    .poster__Drama:nth-child(2) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/Drama/Freddy.jpeg');
+    }
+    .poster__Drama:nth-child(3) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/Drama/Goodwill_Hunting.jpeg');
+    }
+    
+    .poster__Drama h2 {
+      position: absolute;
+      top: 350px;
+      left: 30px;
+    }
+    
+    .poster__Drama p {
+      position: absolute;
+      top: 400px;
+      left: 30px;
+    }
+    
+    .poster__Drama button {
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: #f77062;
+      position: absolute;
+      top: 440px;
+      left: 30px;
+      font-size: 1rem;
+    }
+    
+    .poster__Drama button:hover {
+      cursor: pointer;
+    }
+    
+    .poster__Drama:hover {
+      transform: scale(1.075);
+      transition: 0.2s ease-in;
+      cursor: pointer;
+    }
+  
+    .poster__Drama2 {
+      margin: 1rem;
+      height: 525px;
+      width: 400px;
+      border-radius: 4px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.6) 100%
+        ),
+        url('../MovieUP/images/Drama/Pieces_Of_Her.png');
+      background-size: cover;
+      position: relative;
+      color: #fff;
+    }
+    
+    .poster__Drama2:before {
+      opacity: 0.2;
+    }
+    
+    .poster__Drama2:nth-child(2) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/Drama/Requiem_Dream.png');
+    }
+    .poster__Drama2:nth-child(3) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/Drama/The_GodFather.jpeg');
+    }
+    
+    .poster__Drama2 h2 {
+      position: absolute;
+      top: 350px;
+      left: 30px;
+    }
+    
+    .poster__Drama2 p {
+      position: absolute;
+      top: 400px;
+      left: 30px;
+    }
+    
+    .poster__Drama2 button {
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: #f77062;
+      position: absolute;
+      top: 440px;
+      left: 30px;
+      font-size: 1rem;
+    }
+    
+    .poster__Drama2 button:hover {
+      cursor: pointer;
+    }
+    
+    .poster__Drama2:hover {
+      transform: scale(1.075);
+      transition: 0.2s ease-in;
+      cursor: pointer;
+    }
+  
+  
+    .poster__Drama3 {
+      margin: 1rem;
+      height: 525px;
+      width: 400px;
+      border-radius: 4px;
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.6) 100%
+        ),
+        url('../MovieUP/images/Drama/The_wonder.png');
+      background-size: cover;
+      position: relative;
+      color: #fff;
+    }
+    
+    .poster__Drama3:before {
+      opacity: 0.2;
+    }
+    
+    .poster__Drama3:nth-child(2) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/Drama/Whiplash.jpeg');
+    }
+    .poster__Drama3:nth-child(3) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(17, 17, 17, 0.9) 100%
+        ),
+        url('../MovieUP/images/Drama/Women_talking.jpeg');
+    }
+    
+    .poster__Drama3 h2 {
+      position: absolute;
+      top: 350px;
+      left: 30px;
+    }
+    
+    .poster__Drama3 p {
+      position: absolute;
+      top: 400px;
+      left: 30px;
+    }
+    
+    .poster__Drama3 button {
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      background: #f77062;
+      position: absolute;
+      top: 440px;
+      left: 30px;
+      font-size: 1rem;
+    }
+    
+    .poster__Drama3 button:hover {
+      cursor: pointer;
+    }
+    
+    .poster__Drama3:hover {
+      transform: scale(1.075);
+      transition: 0.2s ease-in;
+      cursor: pointer;
+    }
+
+        /* Mystery */
+
+        .poster__Mystery {
+          margin: 1rem;
+          height: 525px;
+          width: 400px;
+          border-radius: 4px;
+          background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(17, 17, 17, 0.6) 100%
+            ),
+            url('../MovieUP/images/Mystery/Death_on_Nile.jpeg');
+          background-size: cover;
+          position: relative;
+          color: #fff;
+        }
+        
+        .poster__Mystery:before {
+          opacity: 0.2;
+        }
+        
+        .poster__Mystery:nth-child(2) {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(17, 17, 17, 0.9) 100%
+            ),
+            url('../MovieUP/images/Mystery/Escape_room.jpeg');
+        }
+        .poster__Mystery:nth-child(3) {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(17, 17, 17, 0.9) 100%
+            ),
+            url('../MovieUP/images/Mystery/Gone_girl.jpeg');
+        }
+        
+        .poster__Mystery h2 {
+          position: absolute;
+          top: 350px;
+          left: 30px;
+        }
+        
+        .poster__Mystery p {
+          position: absolute;
+          top: 400px;
+          left: 30px;
+        }
+        
+        .poster__Mystery button {
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          background: #f77062;
+          position: absolute;
+          top: 440px;
+          left: 30px;
+          font-size: 1rem;
+        }
+        
+        .poster__Mystery button:hover {
+          cursor: pointer;
+        }
+        
+        .poster__Mystery:hover {
+          transform: scale(1.075);
+          transition: 0.2s ease-in;
+          cursor: pointer;
+        }
+      
+        .poster__Mystery2 {
+          margin: 1rem;
+          height: 525px;
+          width: 400px;
+          border-radius: 4px;
+          background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(17, 17, 17, 0.6) 100%
+            ),
+            url('../MovieUP/images/Mystery/Gone_Night.jpeg');
+          background-size: cover;
+          position: relative;
+          color: #fff;
+        }
+        
+        .poster__Mystery2:before {
+          opacity: 0.2;
+        }
+        
+        .poster__Mystery2:nth-child(2) {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(17, 17, 17, 0.9) 100%
+            ),
+            url('../MovieUP/images/Mystery/Nope.png');
+        }
+        .poster__Mystery2:nth-child(3) {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(17, 17, 17, 0.9) 100%
+            ),
+            url('../MovieUP/images/Mystery/Oldboy.jpeg');
+        }
+        
+        .poster__Mystery2 h2 {
+          position: absolute;
+          top: 350px;
+          left: 30px;
+        }
+        
+        .poster__Mystery2 p {
+          position: absolute;
+          top: 400px;
+          left: 30px;
+        }
+        
+        .poster__Mystery2 button {
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          background: #f77062;
+          position: absolute;
+          top: 440px;
+          left: 30px;
+          font-size: 1rem;
+        }
+        
+        .poster__Mystery2 button:hover {
+          cursor: pointer;
+        }
+        
+        .poster__Mystery2:hover {
+          transform: scale(1.075);
+          transition: 0.2s ease-in;
+          cursor: pointer;
+        }
+      
+      
+        .poster__Mystery3 {
+          margin: 1rem;
+          height: 525px;
+          width: 400px;
+          border-radius: 4px;
+          background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(17, 17, 17, 0.6) 100%
+            ),
+            url('../MovieUP/images/Mystery/See_how_run.jpeg');
+          background-size: cover;
+          position: relative;
+          color: #fff;
+        }
+        
+        .poster__Mystery3:before {
+          opacity: 0.2;
+        }
+        
+        .poster__Mystery3:nth-child(2) {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(17, 17, 17, 0.9) 100%
+            ),
+            url('../MovieUP/images/Mystery/Shutter_island.jpeg');
+        }
+        .poster__Mystery3:nth-child(3) {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0) 0%,
+              rgba(17, 17, 17, 0.9) 100%
+            ),
+            url('../MovieUP/images/Mystery/Smile.jpeg');
+        }
+        
+        .poster__Mystery3 h2 {
+          position: absolute;
+          top: 350px;
+          left: 30px;
+        }
+        
+        .poster__Mystery3 p {
+          position: absolute;
+          top: 400px;
+          left: 30px;
+        }
+        
+        .poster__Mystery3 button {
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          outline: none;
+          border-radius: 4px;
+          background: #f77062;
+          position: absolute;
+          top: 440px;
+          left: 30px;
+          font-size: 1rem;
+        }
+        
+        .poster__Mystery3 button:hover {
+          cursor: pointer;
+        }
+        
+        .poster__Mystery3:hover {
+          transform: scale(1.075);
+          transition: 0.2s ease-in;
+          cursor: pointer;
+        }
+
+  /* Horror */
+
+  .poster__Horror {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/Horror/Annabelle.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__Horror:before {
+    opacity: 0.2;
+  }
+  
+  .poster__Horror:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/Horror/Dead_Silence.jpeg');
+  }
+  .poster__Horror:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/Horror/Insidious.jpeg');
+  }
+  
+  .poster__Horror h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__Horror p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__Horror button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__Horror button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__Horror:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+  .poster__Horror2 {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/Horror/Land_dead.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__Horror2:before {
+    opacity: 0.2;
+  }
+  
+  .poster__Horror2:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/Horror/Morbius.jpeg');
+  }
+  .poster__Horror2:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/Horror/Ready_not.png');
+  }
+  
+  .poster__Horror2 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__Horror2 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__Horror2 button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__Horror2 button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__Horror2:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+
+  .poster__Horror3 {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('../MovieUP/images/Horror/Saw.jpeg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .poster__Horror3:before {
+    opacity: 0.2;
+  }
+  
+  .poster__Horror3:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/Horror/Scream.jpeg');
+  }
+  .poster__Horror3:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.9) 100%
+      ),
+      url('../MovieUP/images/Horror/Shallows.jpeg');
+  }
+  
+  .poster__Horror3 h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+  }
+  
+  .poster__Horror3 p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+  }
+  
+  .poster__Horror3 button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+  }
+  
+  .poster__Horror3 button:hover {
+    cursor: pointer;
+  }
+  
+  .poster__Horror3:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+
+
+
+  /* Sign in AND Sgin UP*/ 
+
+  input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    font-size: 1rem;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+ 
+        
+
