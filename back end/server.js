@@ -26,6 +26,7 @@ const categoriesSchema = new mongoose.Schema({
     section_name: String,
 });
 
+
 // Convert schema_2 to model(class) <> collection
 let categoriesModle = new mongoose.model('categories', categoriesSchema);
 
@@ -75,6 +76,7 @@ let horrorCategories = new categoriesModle({
 }).save();
 
 // Get all categories
+
 //app.get('/categories', async (req, res) => {
  //   try {
    //     let categories = await categoriesModle.find();
